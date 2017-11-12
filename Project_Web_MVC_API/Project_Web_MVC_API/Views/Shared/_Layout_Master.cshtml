@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" class="full-height">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/mdb.min.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Start Navbar-->
+    <header>
+        @Html.Partial("_Navbar")
+    </header>
+    <!--End Navbar-->
+    <!--Start Main-->
+    <main class="mt-5">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+    <!--End Main-->
+    <!--Start Footer-->
+    <footer></footer>
+    <!--End Footer-->
+</body>
+</html>
+<script src="~/Scripts/jquery-3.2.1.min.js"></script>
+<script src="~/Scripts/popper.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/mdb.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJELqUZ57Ds_cjd953ETm_Dic-bAInOq8&callback=initMap" type="text/javascript"></script>
+<script>
+    //Google Map Setting
+    function initMap() {
+        var var_location = { lat: 10.767519, lng: 106.653138 };
+        var map = new google.maps.Map(document.getElementById('map-container'), {
+            zoom: 14,
+            center: var_location
+        });
+        var marker = new google.maps.Marker({
+            position: var_location,
+            map: map
+        });
+    }
+</script>
+<script>
+    $(".carousel").carousel({
+        interval: 2000,
+    });
+</script>
