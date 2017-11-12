@@ -13,5 +13,25 @@ namespace Project_Web_MVC_API.Controllers
         {
             return View();
         }
+        public ActionResult Features()
+        {
+            return View();
+        }
+        public ActionResult Product()
+        {
+            return View();
+        }
+        public ActionResult Exemples()
+        {
+            return View();
+        }
+        public ActionResult Gallery()
+        {
+            return View();
+        }
+        public ActionResult Contact()
+        {
+            return View();
+        }
     }
 }

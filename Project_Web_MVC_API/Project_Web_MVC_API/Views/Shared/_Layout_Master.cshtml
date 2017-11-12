@@ -12,12 +12,12 @@
     <link href="~/Content/mdb.min.css" rel="stylesheet" />
     <link href="~/Content/style.css" rel="stylesheet" />
 </head>
-<body>
-    <!--Start Navbar-->
+<body class="fixed-sn white-skin">
     <header>
+        <!--Start Navbar-->
         @Html.Partial("_Navbar")
+        <!--End Navbar-->
     </header>
-    <!--End Navbar-->
     <!--Start Main-->
     <main class="mt-5">
         <div class="container">
@@ -26,7 +26,9 @@
     </main>
     <!--End Main-->
     <!--Start Footer-->
-    <footer></footer>
+    <footer class="page-footer center-on-small-only unique-color-dark pt-0">
+        @Html.Partial("_Footer")
+    </footer>
     <!--End Footer-->
 </body>
 </html>
@@ -50,6 +52,7 @@
     }
 </script>
 <script>
+    $(".button-collapse").sideNav();
     $(".carousel").carousel({
         interval: 2000,
     });
