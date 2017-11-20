@@ -3,35 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using Project_Web_MVC_API.Models;
 namespace Project_Web_MVC_API.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        Z_XShopEntities db = new Z_XShopEntities();
+        public List<Product> ProductList(int count)
+        {
+            return db.Products.OrderByDescending(p => p.ProductDate).Take(count).ToList();
+        }
         public ActionResult Index()
         {
             return View();
         }
         public ActionResult Features()
         {
-            return View();
+            return PartialView();
         }
-        public ActionResult Product()
+        public ActionResult BestProduct()
         {
-            return View();
+            return PartialView();
         }
         public ActionResult Exemples()
         {
-            return View();
+            var list = ProductList(3);
+            return PartialView(list);
         }
         public ActionResult Gallery()
         {
-            return View();
+            return PartialView();
         }
         public ActionResult Contact()
         {
-            return View();
+            return PartialView();
         }
     }
 }

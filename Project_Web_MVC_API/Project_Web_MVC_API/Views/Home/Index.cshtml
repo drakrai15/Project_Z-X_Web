@@ -1,14 +1,13 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout_Master.cshtml";
 }
 
 @Html.Partial("Features")
 <hr class="my-5" />
-@Html.Partial("Product")
+@Html.Partial("BestProduct")
 <hr class="my-5" />
-@Html.Partial("Exemples")
+@Html.Action("Exemples")
 <hr class="my-5" />
 @Html.Partial("Gallery")
 <hr class="my-5" />

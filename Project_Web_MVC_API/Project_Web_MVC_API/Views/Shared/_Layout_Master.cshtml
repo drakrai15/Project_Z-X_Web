@@ -52,8 +52,16 @@
     }
 </script>
 <script>
-    $(".button-collapse").sideNav();
+    //$(".button-collapse").sideNav();
     $(".carousel").carousel({
         interval: 2000,
+    });
+    $(".smooth-scroll").on('click', 'a', function (event) {
+        event.preventDefault();
+        var elAttr = $(this).attr('href'),
+            offset = ($(this).data('offset') ? $(this).data('offset') : 0);
+        $('body,html').animate({
+            scrollTop: $(elAttr).offset().top + offset
+        }, 700);
     });
 </script>

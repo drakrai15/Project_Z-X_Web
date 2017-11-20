@@ -177,3 +177,7 @@ C:\Users\hieun\Desktop\Project_Z-X_Web\Project_Web_MVC_API\Project_Web_MVC_API\o
 C:\Users\hieun\Desktop\Project_Z-X_Web\Project_Web_MVC_API\Project_Web_MVC_API\obj\Debug\Project_Web_MVC_API.csproj.CoreCompileInputs.cache
 C:\Users\hieun\Desktop\Project_Z-X_Web\Project_Web_MVC_API\Project_Web_MVC_API\obj\Debug\Project_Web_MVC_API.dll
 C:\Users\hieun\Desktop\Project_Z-X_Web\Project_Web_MVC_API\Project_Web_MVC_API\obj\Debug\Project_Web_MVC_API.pdb
+C:\Users\hieun\Desktop\Project_Z-X_Web\Project_Web_MVC_API\Project_Web_MVC_API\bin\EntityFramework.dll
+C:\Users\hieun\Desktop\Project_Z-X_Web\Project_Web_MVC_API\Project_Web_MVC_API\bin\EntityFramework.SqlServer.dll
+C:\Users\hieun\Desktop\Project_Z-X_Web\Project_Web_MVC_API\Project_Web_MVC_API\bin\EntityFramework.xml
+C:\Users\hieun\Desktop\Project_Z-X_Web\Project_Web_MVC_API\Project_Web_MVC_API\bin\EntityFramework.SqlServer.xml
